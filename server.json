@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.steadylinedata/web-data-tools",
+  "title": "Steadyline Data web tools",
+  "description": "13 pay-per-result tools: jobs, funding, contacts, teams, phones, tech stacks, DNS, PDFs, reviews",
+  "version": "1.1.0",
+  "websiteUrl": "https://steadylinedata.com/mcp/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/website-team-extractor,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews",
+      "headers": [
+        {
+          "name": "Authorization",
+          "isSecret": true,
+          "description": "Optional: 'Bearer <APIFY_TOKEN>' (otherwise Apify OAuth on connect). Free Apify account works."
+        }
+      ]
+    }
+  ]
+}
