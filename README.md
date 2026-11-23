@@ -6,10 +6,10 @@ This repository holds the official [MCP Registry](https://registry.modelcontextp
 
 Contact: hello@steadylinedata.com
 
-## Add all 16 tools to an MCP client
+## Add all 17 tools to an MCP client
 
 ```
-https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews
+https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews
 ```
 
 Auth: sign in with Apify (OAuth) on first connect, or send `Authorization: Bearer <APIFY_TOKEN>`. A free Apify account works. Runs are billed to your Apify account at each tool's pay-per-result price. There is no Steadyline subscription.
@@ -18,7 +18,7 @@ Config files:
 
 - Cursor: [`mcp/cursor-mcp.json`](mcp/cursor-mcp.json) → `~/.cursor/mcp.json`
 - VS Code: [`mcp/vscode-mcp.json`](mcp/vscode-mcp.json) → `.vscode/mcp.json`
-- Claude Code: `claude mcp add --transport http steadyline "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews"`
+- Claude Code: `claude mcp add --transport http steadyline "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews"`
 
 Docs: https://steadylinedata.com/mcp/
 
@@ -31,6 +31,7 @@ Official registry name: `com.steadylinedata/web-data-tools`
 | ATS job feeds | [ats-jobs-feed](https://apify.com/steadyline/ats-jobs-feed) | $2 / 1,000 jobs |
 | SEC Form D funded companies | [sec-form-d-funded-companies](https://apify.com/steadyline/sec-form-d-funded-companies) | $2 / 1,000 filings |
 | Website contacts | [website-contact-extractor](https://apify.com/steadyline/website-contact-extractor) | $2 / 1,000 sites |
+| Business contact record verifier | [business-contact-record-verifier](https://apify.com/steadyline/business-contact-record-verifier) | $5 / 1,000 processed records |
 | Team page people | [website-team-extractor](https://apify.com/steadyline/website-team-extractor) | $0.004 / person |
 | Email pattern finder | [email-pattern-finder](https://apify.com/steadyline/email-pattern-finder) | $2 / 1,000 best guesses |
 | Company name to domain | [company-name-to-domain](https://apify.com/steadyline/company-name-to-domain) | $2 / 1,000 confident matches |
