@@ -6,10 +6,10 @@ This repository holds the official [MCP Registry](https://registry.modelcontextp
 
 Contact: hello@steadylinedata.com
 
-## Add all 17 tools to an MCP client
+## Add all 20 tools to an MCP client
 
 ```
-https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews
+https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews,steadyline/web-page-to-llm-context,steadyline/shopify-store-profiler,steadyline/dataset-llm-slimmer
 ```
 
 Auth: sign in with Apify (OAuth) on first connect, or send `Authorization: Bearer <APIFY_TOKEN>`. A free Apify account works. Runs are billed to your Apify account at each tool's pay-per-result price. There is no Steadyline subscription.
@@ -18,7 +18,7 @@ Config files:
 
 - Cursor: [`mcp/cursor-mcp.json`](mcp/cursor-mcp.json) → `~/.cursor/mcp.json`
 - VS Code: [`mcp/vscode-mcp.json`](mcp/vscode-mcp.json) → `.vscode/mcp.json`
-- Claude Code: `claude mcp add --transport http steadyline "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews"`
+- Claude Code: `claude mcp add --transport http steadyline "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews,steadyline/web-page-to-llm-context,steadyline/shopify-store-profiler,steadyline/dataset-llm-slimmer"`
 
 Docs: https://steadylinedata.com/mcp/
 
@@ -28,7 +28,7 @@ Official registry name: `com.steadylinedata/web-data-tools`
 
 | Tool | Apify Store | Price (primary) |
 |---|---|---|
-| ATS job feeds | [ats-jobs-feed](https://apify.com/steadyline/ats-jobs-feed) | $2 / 1,000 jobs |
+| Hiring signals: Workday, Greenhouse, Lever & Ashby jobs | [ats-jobs-feed](https://apify.com/steadyline/ats-jobs-feed) | $2 / 1,000 jobs |
 | SEC Form D funded companies | [sec-form-d-funded-companies](https://apify.com/steadyline/sec-form-d-funded-companies) | $2 / 1,000 filings |
 | Website contacts | [website-contact-extractor](https://apify.com/steadyline/website-contact-extractor) | $2 / 1,000 sites |
 | Business contact record verifier | [business-contact-record-verifier](https://apify.com/steadyline/business-contact-record-verifier) | $5 / 1,000 processed records |
@@ -42,8 +42,11 @@ Official registry name: `com.steadylinedata/web-data-tools`
 | WHOIS / DNS / SSL | [domain-intel](https://apify.com/steadyline/domain-intel) | $1 / 1,000 domains |
 | Sitemaps, robots.txt, llms.txt | [site-discovery](https://apify.com/steadyline/site-discovery) | $2 / 1,000 domains |
 | Website screenshots | [website-screenshot](https://apify.com/steadyline/website-screenshot) | $2 / 1,000 shots |
-| PDF to Markdown | [pdf-document-to-markdown](https://apify.com/steadyline/pdf-document-to-markdown) | $2 / 1,000 docs |
-| Bulk HTTP runner | [http-request-runner](https://apify.com/steadyline/http-request-runner) | $0.80 / 1,000 requests |
+| PDF to Markdown (token-lean mode) | [pdf-document-to-markdown](https://apify.com/steadyline/pdf-document-to-markdown) | $2 / 1,000 docs |
+| Bulk HTTP runner (optional token stats) | [http-request-runner](https://apify.com/steadyline/http-request-runner) | $0.80 / 1,000 requests |
+| Web page to LLM context (token-lean Markdown) | [web-page-to-llm-context](https://apify.com/steadyline/web-page-to-llm-context) | $1 / 1,000 pages |
+| Shopify store profiler | [shopify-store-profiler](https://apify.com/steadyline/shopify-store-profiler) | $3 / 1,000 stores |
+| Dataset LLM slimmer | [dataset-llm-slimmer](https://apify.com/steadyline/dataset-llm-slimmer) | $0.50 / 1,000 rows |
 | App Store reviews | [app-store-reviews](https://apify.com/steadyline/app-store-reviews) | from $0.30 / 1,000 reviews |
 
 A JSON HTTP API for 11 of these tools (not the team extractor or HTTP runner) is at https://api.steadylinedata.com with OpenAPI at `/openapi.yaml`. Customer access is through API marketplaces.

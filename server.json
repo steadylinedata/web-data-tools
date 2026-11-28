@@ -2,13 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.steadylinedata/web-data-tools",
   "title": "Steadyline Data web tools",
-  "description": "17 pay-per-result tools: jobs, funding, contacts, CRM verify, teams, emails, phones, DNS, PDFs",
-  "version": "1.3.0",
+  "description": "20 pay-per-result tools: jobs, funding, contacts, Shopify, LLM context, CRM verify, DNS, PDFs",
+  "version": "1.4.0",
   "websiteUrl": "https://steadylinedata.com/mcp/",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews",
+      "url": "https://mcp.apify.com?tools=steadyline/ats-jobs-feed,steadyline/sec-form-d-funded-companies,steadyline/website-contact-extractor,steadyline/business-contact-record-verifier,steadyline/website-team-extractor,steadyline/email-pattern-finder,steadyline/company-name-to-domain,steadyline/website-company-profiler,steadyline/tech-stack-detector,steadyline/email-deliverability-checker,steadyline/phone-number-validator,steadyline/domain-intel,steadyline/site-discovery,steadyline/website-screenshot,steadyline/pdf-document-to-markdown,steadyline/http-request-runner,steadyline/app-store-reviews,steadyline/web-page-to-llm-context,steadyline/shopify-store-profiler,steadyline/dataset-llm-slimmer",
       "headers": [
         {
           "name": "Authorization",
